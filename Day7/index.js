@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 
 app.use(express.json());
+// if request is in json format , we convert it to js object
+// cause accessing or working on js object is more easier n flexible for express.
 
 const bookstore =[
     {id:1,name:"Harry potter",author:"DevFlux"},
